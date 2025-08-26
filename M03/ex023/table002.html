@@ -11,13 +11,27 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         td,th{
             border: 1px solid black;
             padding: 10px;
         }
+        tbody tr:nth-child(2n) {
+            background-color: lightgray;
+        }
         .num{
             text-align: right;
+        }
+        thead{
+            position: sticky;
+            top: 0;
         }
         thead, tfoot{
             background-color: gray;
@@ -30,6 +44,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION = legenda
             THEAD
                 TR, TD, TH
             TBODY
@@ -38,10 +53,11 @@
                 TR, TD ,TH
     -->
     <table>
+        <caption>Populção das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -156,10 +172,15 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>212.583.750</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos similique aliquid tenetur perferendis iusto nulla omnis! Ex nulla facilis quae saepe deserunt accusamus corrupti dolorem quas, adipisci corporis officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, excepturi ut atque, cum odit, architecto placeat commodi natus doloribus quis omnis totam iusto impedit earum. Labore esse eos eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus harum inventore deserunt quia maiores sint, laborum dolores accusamus aut? Enim, quo nulla. Voluptatum tempora, distinctio officiis voluptas ad unde aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere consequuntur laboriosam explicabo obcaecati delectus provident impedit eius magni repellendus officiis perferendis similique quae hic molestias, aliquid voluptatibus quibusdam odit velit!l</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos similique aliquid tenetur perferendis iusto nulla omnis! Ex nulla facilis quae saepe deserunt accusamus corrupti dolorem quas, adipisci corporis officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, excepturi ut atque, cum odit, architecto placeat commodi natus doloribus quis omnis totam iusto impedit earum. Labore esse eos eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus harum inventore deserunt quia maiores sint, laborum dolores accusamus aut? Enim, quo nulla. Voluptatum tempora, distinctio officiis voluptas ad unde aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere consequuntur laboriosam explicabo obcaecati delectus provident impedit eius magni repellendus officiis perferendis similique quae hic molestias, aliquid voluptatibus quibusdam odit velit!l</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos similique aliquid tenetur perferendis iusto nulla omnis! Ex nulla facilis quae saepe deserunt accusamus corrupti dolorem quas, adipisci corporis officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, excepturi ut atque, cum odit, architecto placeat commodi natus doloribus quis omnis totam iusto impedit earum. Labore esse eos eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus harum inventore deserunt quia maiores sint, laborum dolores accusamus aut? Enim, quo nulla. Voluptatum tempora, distinctio officiis voluptas ad unde aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere consequuntur laboriosam explicabo obcaecati delectus provident impedit eius magni repellendus officiis perferendis similique quae hic molestias, aliquid voluptatibus quibusdam odit velit!l</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos similique aliquid tenetur perferendis iusto nulla omnis! Ex nulla facilis quae saepe deserunt accusamus corrupti dolorem quas, adipisci corporis officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, excepturi ut atque, cum odit, architecto placeat commodi natus doloribus quis omnis totam iusto impedit earum. Labore esse eos eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus harum inventore deserunt quia maiores sint, laborum dolores accusamus aut? Enim, quo nulla. Voluptatum tempora, distinctio officiis voluptas ad unde aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere consequuntur laboriosam explicabo obcaecati delectus provident impedit eius magni repellendus officiis perferendis similique quae hic molestias, aliquid voluptatibus quibusdam odit velit!l</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit eos similique aliquid tenetur perferendis iusto nulla omnis! Ex nulla facilis quae saepe deserunt accusamus corrupti dolorem quas, adipisci corporis officia? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a, excepturi ut atque, cum odit, architecto placeat commodi natus doloribus quis omnis totam iusto impedit earum. Labore esse eos eum. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus harum inventore deserunt quia maiores sint, laborum dolores accusamus aut? Enim, quo nulla. Voluptatum tempora, distinctio officiis voluptas ad unde aliquid. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere consequuntur laboriosam explicabo obcaecati delectus provident impedit eius magni repellendus officiis perferendis similique quae hic molestias, aliquid voluptatibus quibusdam odit velit!l</p>
 </body>
 </html>
